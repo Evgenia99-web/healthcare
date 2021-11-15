@@ -1,0 +1,318 @@
+@import "colors.css";
+@import "fonts.css";
+
+*{margin: 0;padding: 0;}
+.container{max-width: 1400px; margin: 0 auto;}
+.main-block{height: 100vh; padding: 0 68px; background-color: var(--primary-color); border-radius: 0px 0px 250px 250px;}
+.header{padding: 40px 0; margin-bottom: 70px;}
+.header, .menu, .info-block, .intro, .tabs-caption, .modal-head, .feedback-content{display: flex; justify-content: space-between; align-items: center;}
+.logo-solutions, .agency-mos{margin-right: 70px;}
+.menu, .section-list, .list-buttons, .tabs-caption, .steps-list{list-style: none;}
+.item{margin-left: 40px;}
+.link-item{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white-text);
+    text-decoration: none;
+}
+.info-block{margin-bottom: 45px;}
+.main-title{
+    font-family: "TTFirs-ExtraBold";
+    width: 670px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white-text);
+}
+.description{
+    font-family: "TTFirs-Regular";
+    width: 650px;
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 40px;
+    color: var(--white-text);
+}
+.add-solution{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: var(--white-text);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 21px 80px;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-right: 50px;
+}
+.open-research{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid var(--white-text);
+    border-radius: 10px;
+    padding: 21px 80px;
+    text-decoration: none;
+    color: var(--white-text);
+}
+.scroll{
+    bottom: 50px;
+    margin: 0 auto;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    left: 48%;
+}
+
+.about-project{margin-top: 110px; margin-bottom: 101px;}
+.text-block, .descript{
+    font-family: "TTFirs-Regular";
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--black-text);
+}
+.text-block{ margin-bottom: 40px;}
+
+.title{
+    font-family: "TTFirs-Bold";
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--black-text);
+    margin-bottom: 50px;
+}
+.solutions{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.intro{justify-content: flex-start;}
+.icon{margin-right: 50px;}
+.medicine, .health{max-width: 600px;}
+.intro{margin-top: 64px;margin-bottom: 74px;}
+.name-section{
+    font-family: "TTFirs-Medium";
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: var(--black-text);
+}
+.title-item{
+    font-family: "TTFirs-Bold";
+    font-size: 24px;
+    line-height: 100%;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+    margin-bottom: 28px;
+}
+.descript-item{
+    font-family: "TTFirs-Medium";
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black-text);
+    margin-bottom: 50px;
+}
+
+.modal-link{cursor: pointer; text-decoration: none; color: var(--primary-color);}
+.perspective-tech{
+    background-image: url("../img/prospect_tech.png");
+    background-position: right 365px;
+    background-repeat: no-repeat;
+    background-color: var(--bg-color);
+    border-radius: 0px 300px;
+    padding-top: 100px;
+}
+.perspective-tech .descript {margin-bottom: 161px;}
+.button-link{
+    width: 500px; height: 100px;
+    font-family: "TTFirs-Bold";
+    font-size: 26px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    background: var(--white-text);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none; margin-bottom: 30px;
+    margin-left: 138px;
+}
+.catalog{
+    background: var(--primary-color);
+    color: var(--white-text);
+    margin-bottom: 232px;
+}
+
+.changes{margin-top: 86px; margin-bottom: 100px;}
+.tabs{margin-top: 42px;}
+.tabs-caption{
+    border: 1px solid var(--black-text);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.tabs-caption .active:nth-child(1){
+    background: var(--primary-color);
+    border: 1px solid #000000;
+    color: var(--white-text);
+    background: #07CEB9;
+    border-radius: 20px 0px 0px 20px;
+}
+.tabs-caption .active:nth-child(2){
+    background: var(--primary-color);
+    border: 1px solid #000000;
+    color: var(--white-text);
+    background: #07CEB9;
+}
+.tabs-caption .active:nth-child(3){
+    background: var(--primary-color);
+    border: 1px solid #000000;
+    color: var(--white-text);
+    background: #07CEB9;
+    border-radius: 0px 20px 20px 0px;
+}
+.tabs-caption li:nth-child(2){border: 1px solid #000000;}
+.tabs-caption li{
+    font-family: TTFirs-Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    padding: 20px 36px;
+    width: 33%;
+}
+.tabs-caption li:not(.active) {
+    cursor: pointer;
+  }
+.tab-item::marker{font-size: 10px;}
+.name-title-tabs{
+    font-family: "TTFirs-Bold";
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--primary-color);
+    margin-left: 103px;
+    margin-bottom: 28px;
+    margin-top: 50px;
+}
+.tab-item{
+    font-family: "TTFirs-Medium";
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black-text);
+    margin-left: 103px;
+}
+.tab-content{display: none;}
+.tab-content.active{display: block;}
+
+.system-steps{
+    padding-top: 100px;
+    background: var(--bg-color);
+    border-radius: 200px 0px;
+    background-image: url("../img/hand.png");
+    background-repeat: no-repeat;
+    background-position: right 520px;
+}
+.system-steps .title{margin-bottom: 100px;}
+.steps-list{display: flex; flex-wrap: wrap;}
+.step-item button{
+    width: 600px; height: 100px;
+    font-family: "TTFirs-Bold";
+    font-size: 26px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color:var(--primary-color);
+    background: var(--white-text);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border: none; margin-bottom: 50px;
+}
+.step-item:nth-child(2n+1) button{ border-radius: 0px 60px 60px 0px; margin-right: 64px; }
+.step-item:nth-child(2n) button{   border-radius: 60px 0px 0px 60px;}
+.step-item:last-child button{      margin-bottom: 256px;}
+
+footer{
+    padding: 30px 0;
+    font-family: "TTFirs-Bold";
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    background-color: var(--black-text);
+    color: var(--white-text);
+}
+
+.modal-block{
+    display: none;
+    padding: 60px 200px;
+    background: var(--white-text);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    z-index: 5;
+    width: 1264px;
+    position: fixed; 
+    margin-top: -450px;
+    margin-left: -150px;
+
+}
+.modal-head{    margin-bottom: 50px;}
+.modal-title{
+    font-family: "TTFirs-Bold";
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--primary-color);
+}
+.modal-text, .modal-item{
+    font-family: "TTFirs-Medium";
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black-text);
+}
+.modal-close{cursor: pointer;}
+.modal-text{margin-bottom: 25px;}
+.modal-item::marker{font-size: 10px;}
+.modal-item{margin-left: 25px;}
+.modal-item:last-child{margin-bottom: 25px;}
+#overlay {
+    z-index:3; 
+    position:fixed; 
+    background-color:#000; 
+    opacity:0.8; 
+    -moz-opacity:0.8;
+    filter:alpha(opacity=80);
+    width:100%;
+    height:100%; 
+    top:0; 
+    left:0;
+    cursor:pointer;
+    display:none; 
+ }
+ .odd{border-radius: 0px 200px 200px 0px; overflow-y: auto; max-height: 80%; }
+ .even{border-radius: 200px 0px 0px 200px; overflow-y: auto; max-height: 80%; }
+
+ .feedback-content{margin: 0 35px; display: flex !important;}
+ .avatar{margin-right: 26px;}
+ .feedback-block{
+     background: var(--primary-color);
+    border-radius: 250px 250px 0px 0px;
+    margin-top: 100px;
+    padding-top: 110px; padding-bottom: 50px;
+}
+.text-back, .organization, .name{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--white-text);
+}
+.name{font-weight: bold; margin-top: 30px;}
+.slick-prev:before {
+    content: url("/img/arrow_left.svg") !important;  opacity: 1;
+}
+.slick-next:before {
+    content: url("/img/arrow_right.svg") !important; opacity: 1;
+}
+.slick-dots li button::before{color: var(--white-text) ; opacity: 1; font-size: 10px;}
