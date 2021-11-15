@@ -50,6 +50,11 @@
     color: var(--primary-color);
     margin-right: 50px;
 }
+.add-solution:hover{
+    color: var(--white-text);
+    border: 1px solid var(--white-text);
+    background-color: var(--primary-color);
+}
 .open-research{
     font-family: Roboto;
     font-style: normal;
@@ -62,6 +67,11 @@
     text-decoration: none;
     color: var(--white-text);
 }
+.open-research:hover{
+    color: var(--primary-color);
+    background-color: var(--white-text);
+    border: 1px solid var(--primary-color);
+}
 .scroll{
     bottom: 50px;
     margin: 0 auto;
@@ -69,6 +79,10 @@
     height: 62px;
     position: absolute;
     left: 48%;
+}
+.arrow:hover path{
+    stroke: var(--white-text);
+    fill: var(--primary-color);
 }
 
 .about-project{margin-top: 110px; margin-bottom: 101px;}
@@ -144,11 +158,17 @@
     border: none; margin-bottom: 30px;
     margin-left: 138px;
 }
+.button-link:hover{    background-color: var(--primary-color);}
+.button-link:hover .modal-link{ color: var(--white-text);}
+.step-window:hover{    background-color: var(--primary-color);}
+.step-window:hover .modal-link{ color: var(--white-text);}
 .catalog{
+    cursor: pointer;
     background: var(--primary-color);
     color: var(--white-text);
     margin-bottom: 232px;
 }
+.catalog:hover{background: var(--white-text);color: var(--primary-color);}
 
 .changes{margin-top: 86px; margin-bottom: 100px;}
 .tabs{margin-top: 42px;}
@@ -310,9 +330,9 @@ footer{
 }
 .name{font-weight: bold; margin-top: 30px;}
 .slick-prev:before {
-    content: url("/img/arrow_left.svg") !important;  opacity: 1;
+    content: url("../img/arrow_left.svg") !important;  opacity: 1;
 }
 .slick-next:before {
-    content: url("/img/arrow_right.svg") !important; opacity: 1;
+    content: url("../img/arrow_right.svg") !important; opacity: 1;
 }
 .slick-dots li button::before{color: var(--white-text) ; opacity: 1; font-size: 10px;}
