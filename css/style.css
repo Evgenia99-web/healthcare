@@ -1,5 +1,6 @@
 @import "colors.css";
 @import "fonts.css";
+@import "media.css";
 
 *{margin: 0;padding: 0;}
 .container{max-width: 1400px; margin: 0 auto;}
@@ -18,10 +19,24 @@
     color: var(--white-text);
     text-decoration: none;
 }
+.burger{
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+.burger span{
+    width: 24px;
+    height: 2px;
+    background-color: var(--white-text);
+    position: absolute;
+}
+.burger span:nth-of-type(2){margin-top: 7px;}
+.burger span:nth-of-type(3){margin-top: 14px;}
 .info-block{margin-bottom: 45px;}
 .main-title{
     font-family: "TTFirs-ExtraBold";
-    width: 670px;
+    max-width: 670px;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: 0.1em;
@@ -30,7 +45,7 @@
 }
 .description{
     font-family: "TTFirs-Regular";
-    width: 650px;
+    max-width: 650px;
     font-size: 24px;
     line-height: 31px;
     margin-top: 40px;
@@ -119,6 +134,7 @@
     letter-spacing: 0.1em;
     color: var(--black-text);
 }
+.small{display: none;}
 .title-item{
     font-family: "TTFirs-Bold";
     font-size: 24px;
