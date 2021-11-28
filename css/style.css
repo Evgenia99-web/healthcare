@@ -20,19 +20,19 @@
     text-decoration: none;
 }
 .burger{
+    cursor: pointer;
     display: none;
     width: 24px;
     height: 24px;
     position: relative;
 }
-.burger span{
+.line{
     width: 24px;
     height: 2px;
+    margin-bottom: 7px;
     background-color: var(--white-text);
-    position: absolute;
+    
 }
-.burger span:nth-of-type(2){margin-top: 7px;}
-.burger span:nth-of-type(3){margin-top: 14px;}
 .info-block{margin-bottom: 45px;}
 .main-title{
     font-family: "TTFirs-ExtraBold";
@@ -352,6 +352,10 @@ footer{
     content: url("../img/arrow_right.svg") !important; opacity: 1;
 }
 .slick-dots li button::before{color: var(--white-text) ; opacity: 1; font-size: 10px;}
+.black, .closebtn{display: none;}
+.toggle .line1{transform: rotate(-45deg) translate(5px, 6px);}
+.toggle .line2{opacity: 0;}
+.toggle .line3{transform: rotate(45deg) translate(5px, 6px);}
 
 
 @media(max-width: 442px) {
@@ -363,6 +367,10 @@ footer{
     .logo-solutions{max-width: 162px;}
     .burger{display: block;}
     .scroll, .agency-mos, .img-block, .header-nav, .section-list, .full{display: none;}
+    .header-nav{position: absolute; top: 15%; right: 30px;}
+    .menu{display: block; text-align: right;}
+    .item{margin-bottom: 30px;}
+    .link-item{font-size: 24px; line-height: 28px; color: rgb(30 32 77);}
     .main-title{font-size: 30px;}
     .description{line-height: 100%;}
     .header-buttons{display: grid;}
