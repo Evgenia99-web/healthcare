@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -17,45 +17,47 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <div class="main-block">
-        <div class="container">
+    <div class="main-block">  
         <header class="header">
-            <img src="img/logo1.png" alt="Карта инновационных решений логотип" class="logo-solutions white">
-            <img src="img/logo12.png" alt="Карта инновационных решений логотип" class="logo-solutions black">
-            <img src="img/logo2.png" alt="Агенство инноваций г.Москвы логотип" class="agency-mos">
-            <nav class="header-nav">
-                <ul class="menu">
-                    <li class="item scroll_to"><a href="#solutions" class="link-item ">Актуальные решения</a></li>
-                    <li class="item scroll_to"><a href="#tech" class="link-item ">Технологии</a></li>
-                    <li class="item scroll_to"><a href="#changing" class="link-item ">Изменения</a></li>
-                    <li class="item scroll_to"><a href="#system" class="link-item ">Системные сдвиги</a></li>
-                    <li class="item scroll_to"><a href="#minds" class="link-item ">Мнения экспертов</a></li>
-                </ul>
-            </nav>
-            <div class="burger">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
+            <div class="container">
+                <div class="header-body">
+                    <img src="img/logo1.png" alt="Карта инновационных решений логотип" class="logo-solutions white">
+                    <img src="img/logo12.png" alt="Карта инновационных решений логотип" class="logo-solutions black">
+                    <img src="img/logo2.png" alt="Агенство инноваций г.Москвы логотип" class="agency-mos">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="menu">
+                            <li class="item scroll_to"><a href="#solutions" class="link-item ">Актуальные решения</a></li>
+                            <li class="item scroll_to"><a href="#tech" class="link-item ">Технологии</a></li>
+                            <li class="item scroll_to"><a href="#changing" class="link-item ">Изменения</a></li>
+                            <li class="item scroll_to"><a href="#system" class="link-item ">Системные сдвиги</a></li>
+                            <li class="item scroll_to"><a href="#minds" class="link-item ">Мнения экспертов</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
-        <div class="info-block">
-            <div class="info-text">
-                <h1 class="main-title">изменения сферы здравоохранения после пандемии</h1>
-                <p class="description">Агенство инноваций Москвы подготовило подборку продуктов и сервисов по перспективным направлениям развития отрасли</p>
+        <div class="container">
+            <div class="info-block">
+                <div class="info-text">
+                    <h1 class="main-title">изменения сферы здравоохранения после пандемии</h1>
+                    <p class="description">Агенство инноваций Москвы подготовило подборку продуктов и сервисов по перспективным направлениям развития отрасли</p>
+                </div>
+                <img src="img/main_img.png" alt="" class="img-block">
             </div>
-            <img src="img/main_img.png" alt="" class="img-block">
+            <div class="header-buttons">
+                <a href="#" class="add-solution">Добавить решение</a>
+                <a href="#" class="open-research">Открыть исследование</a>
+            </div>
+            <a href="#about" id="scroll_bottom" class="scroll scroll_to">
+                <svg class="arrow" width="62" height="62" viewbox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31 62C48.1208 62 62 48.1208 62 31C62 13.8792 48.1208 0 31 0C13.8792 0 0 13.8792 0 31C0 48.1208 13.8792 62 31 62Z" fill="white"/>
+                    <path d="M16 25L30.5 40L45 25" stroke="#07CEB9" stroke-width="4" stroke-linecap="round"/>
+                </svg>                
+            </a>
         </div>
-        <div class="header-buttons">
-            <a href="#" class="add-solution">Добавить решение</a>
-            <a href="#" class="open-research">Открыть исследование</a>
-        </div>
-        <a href="#about" id="scroll_bottom" class="scroll scroll_to">
-            <svg class="arrow" width="62" height="62" viewbox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M31 62C48.1208 62 62 48.1208 62 31C62 13.8792 48.1208 0 31 0C13.8792 0 0 13.8792 0 31C0 48.1208 13.8792 62 31 62Z" fill="white"/>
-                <path d="M16 25L30.5 40L45 25" stroke="#07CEB9" stroke-width="4" stroke-linecap="round"/>
-            </svg>                
-        </a>
-    </div>
     </div>
     <section id="about" class="about-project container">
         <p class="text-block">Системы здравоохранения во всем мире проходят стресс-тест: нехватка мощностей и средств для оперативного реагирования 
