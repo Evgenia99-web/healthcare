@@ -188,28 +188,27 @@
     border-radius: 20px;
     margin-bottom: 50px;
 }
-.tabs-caption .active:nth-child(1){
-    background: var(--primary-color);
+.tabs-caption .dactive:nth-child(1){
     border: 1px solid #000000;
     color: var(--white-text);
-    background: #07CEB9;
+    background: var(--primary-color);
     border-radius: 20px 0px 0px 20px;
 }
-.tabs-caption .active:nth-child(2){
+.tabs-caption .dactive:nth-child(2){
     background: var(--primary-color);
     border: 1px solid #000000;
     color: var(--white-text);
-    background: #07CEB9;
+    background: var(--primary-color);
 }
-.tabs-caption .active:nth-child(3){
+.tabs-caption .dactive:nth-child(3){
     background: var(--primary-color);
     border: 1px solid #000000;
     color: var(--white-text);
-    background: #07CEB9;
+    background: var(--primary-color);
     border-radius: 0px 20px 20px 0px;
 }
 .tabs-caption li:nth-child(2){border: 1px solid #000000;}
-.tabs-caption li{
+.tabs-caption li, .tabs-caption-mobile li{
     font-family: TTFirs-Bold;
     font-size: 22px;
     line-height: 100%;
@@ -217,7 +216,8 @@
     padding: 20px 36px;
     width: 33%;
 }
-.tabs-caption li:not(.active) {
+.tabs-caption-mobile{display: none;}
+.tabs-caption li:not(.dactive) {
     cursor: pointer;
   }
 .tab-item::marker{font-size: 10px;}
@@ -238,7 +238,7 @@
     margin-left: 103px;
 }
 .tab-content{display: none;}
-.tab-content.active{display: block;}
+.tab-content.active, .tab-content.active-list{display: block;}
 
 .system-steps{
     padding-top: 100px;
@@ -348,6 +348,24 @@ footer{
 }
 .slick-dots li button::before{color: var(--white-text) ; opacity: 1; font-size: 10px;}
 .black{display: none;}
+.watch-all{
+    display: none;
+    font-family: "TTFirs-Bold";
+    font-size: 14px;
+    line-height: 16px;
+    padding: 17px 58px;
+    border: 1px solid var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.watch-all:hover{
+    background-color: var(--primary-color);
+    color: var(--white-text);
+}
 
 @media (max-width:769px){
     .main-block{
@@ -472,15 +490,16 @@ footer{
     .intro{ width: 140px; }
     .name-section{font-size: 26px; line-height: 100%; color: var(--primary-color);}
     .step-item button{width: 100%;}
-    .tabs-caption{display: block; border-radius: 0; border: none; background-color: var(--primary-color); color: var(--white-text);}
-    .tabs-caption li{width: auto;}
-    .tabs-caption .active:nth-child(1), .tabs-caption .active:nth-child(2), .tabs-caption .active:nth-child(3){border: 0px solid; border-bottom: 1px solid var(--white-text); border-radius: 0; }
-    .tabs-caption li:nth-child(2) {        border: none;    }
+    .tabs-caption{display: none;}
+    .mitm1, .mitm2, .mitm3, .mitm4{display: none;}
+    .mactive{display: list-item;}
+    .tabs-caption-mobile{display: block; border-radius: 0; border: none; background-color: var(--primary-color); color: var(--white-text);}
+    .tabs-caption-mobile li{width: auto;}
+    .tabs-caption-mobile .mactive:nth-child(1), .tabs-caption-mobile .mactive:nth-child(2), .tabs-caption-mobile .mactive:nth-child(3),.tabs-caption-mobile .mactive:nth-child(4){border: 0px solid; border-bottom: 1px solid var(--white-text); border-radius: 0; }
+    .tabs-caption-mobile li:nth-child(2), .tabs-caption-mobile li:nth-child(3) {        border: none;    }
     .slick-prev, .slick-next{top: 10%;}
     .avatar{ width: 250px;}
     .feedback-content{ padding: 0;}
-    
-
     footer{padding: 30px;}
     .modal-block {
         padding: 65px 30px;
@@ -491,4 +510,11 @@ footer{
         overflow-y: auto;
         max-height: 60%;
     }
+
+    .intro:hover, .intro:active {background-color: var(--primary-color); cursor: pointer;}
+    .intro:hover .icon path, .intro:active .icon path{fill:var(--white-text)}
+    .intro:hover .name-section, .intro:active .name-section{color: var(--white-text);}
+    .watch-all{display: block;}
+    .sport-active{display: block; width: 350px; margin-left: -200px;}
+    .med-active{display: block; width: 350px;}
 }

@@ -16,24 +16,6 @@ jQuery(document).ready(function($) {
     });
   });
 
-
-(function($) {
-    $(function() {
-      $("ul.tabs-caption").on("click", "li:not(.active)", function() {
-        $(this)
-          .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .closest("div.tabs")
-          .find("div.tab-content")
-          .removeClass("active")
-          .eq($(this).index())
-          .addClass("active");
-      });
-    });
-  })(jQuery);
-
-
   $(document).ready(function() { 
     var overlay = $('#overlay'); // пoдлoжкa, дoлжнa быть oднa нa стрaнице
     var open_modal = $('.open-modal'); // все ссылки, кoтoрые будут oткрывaть oкнa
