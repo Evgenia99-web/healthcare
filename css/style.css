@@ -147,7 +147,7 @@
     margin-bottom: 50px;
 }
 
-.modal-link{cursor: pointer; text-decoration: none; color: var(--primary-color);}
+.modal-link{cursor: grab; text-decoration: none; color: var(--primary-color);}
 .perspective-tech{
     background-image: url("../img/prospect_tech.png");
     background-position: right 365px;
