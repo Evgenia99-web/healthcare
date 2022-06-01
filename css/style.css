@@ -59,11 +59,13 @@
     text-decoration: none;
     color: var(--primary-color);
     margin-right: 50px;
+    cursor: grab;
 }
 .add-solution:hover{
     color: var(--white-text);
     border: 1px solid var(--white-text);
     background-color: var(--primary-color);
+    cursor: grab;
 }
 .open-research{
     font-family: Roboto;
@@ -76,11 +78,13 @@
     padding: 21px 80px;
     text-decoration: none;
     color: var(--white-text);
+    cursor: grab;
 }
 .open-research:hover{
     color: var(--primary-color);
     background-color: var(--white-text);
     border: 1px solid var(--primary-color);
+    cursor: grab;
 }
 .scroll{
     bottom: 50px;
@@ -90,10 +94,7 @@
     position: absolute;
     left: 48%;
 }
-.arrow:hover path{
-    stroke: var(--white-text);
-    fill: var(--primary-color);
-}
+
 
 .about-project{margin-top: 110px; margin-bottom: 101px;}
 .text-block, .descript{
@@ -168,13 +169,14 @@
     border-radius: 20px;
     border: none; margin-bottom: 30px;
     margin-left: 138px;
+    cursor: grab;
 }
-.button-link:hover{    background-color: var(--primary-color);}
+.button-link:hover{    background-color: var(--primary-color); cursor: grab;}
 .button-link:hover .modal-link{ color: var(--white-text);}
-.step-window:hover{    background-color: var(--primary-color);}
+.step-window:hover{    background-color: var(--primary-color); cursor: grab;}
 .step-window:hover .modal-link{ color: var(--white-text);}
 .catalog{
-    cursor: pointer;
+    cursor: grab;
     background: var(--primary-color);
     color: var(--white-text);
     margin-bottom: 232px;
@@ -247,6 +249,7 @@
     background-image: url("../img/hand.png");
     background-repeat: no-repeat;
     background-position: right 520px;
+    margin-bottom:100px;
 }
 .system-steps .title{margin-bottom: 100px;}
 .steps-list{display: flex; flex-wrap: wrap;}
