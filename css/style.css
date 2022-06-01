@@ -371,6 +371,7 @@ footer{
 }
 
 @media (max-width:769px){
+    .header{margin-bottom:0;}
     .main-block{
        background-image: url("../img/main_img.png"); 
         background-repeat: no-repeat; background-position: bottom;
@@ -438,6 +439,7 @@ footer{
         width: 60%;
         margin-bottom: 25px;
     }
+    .info-block{    word-break: break-word;}
     .scroll, .agency-mos, .img-block{display: none;}
     section{padding-left: 68px; padding-right: 68px;}
     .small, .intro{display: block;}
